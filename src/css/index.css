@@ -1,0 +1,44 @@
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #000;
+}
+
+* {
+  font: 16px arial, helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: #373737;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.3);
+  background: transparent;
+}
+
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 8px;
+}
+
+h1 {
+  line-height: inherit;
+  text-transform: capitalize;
+  color: #070707;
+  font-size: 1.5em;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.book-store {
+  margin: 8px;
+  width: 90%;
+}

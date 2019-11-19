@@ -1,0 +1,58 @@
+.form {
+  width: 90%;
+  margin-top: 16px;
+  border-top: 1px solid #909090;
+  border-color: rgb(230, 230, 230);
+  padding-top: 8px;
+}
+
+.form_title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: bold;
+}
+
+.title {
+  width: 50%;
+  padding-right: 8px;
+}
+
+.title input {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: 1px solid #909090;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.select {
+  width: 30%;
+  padding-right: 8px;
+}
+
+.select select {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: 1px solid #909090;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.button {
+  width: 20%;
+  padding-right: 8px;
+}
+
+.button button {
+  padding: 0.4em;
+  border: 1px solid #909090;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.button button:hover {
+  box-shadow: 6px 6px 3px -3px rgba(0, 0, 0, 0.39);
+}
