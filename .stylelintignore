@@ -1,0 +1,2 @@
+#  Ignore coverage directory used by tools like istanbul
+coverage
