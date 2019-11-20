@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
+import { removeBook } from '../actions';
 import styles from '../css/modules/BooksList.module.css';
 
-const BookList = ({ books }) => {
-  const bookRows = books.map(book => <Book key={book.id} book={book} />);
+const BookList = ({ books, removeBook }) => {
+  const bookRows = books.map(book => (
+    <Book handleRemoveBook={() => removeBook(book)} key={book.id} book={book} />
+  ));
 
   return (
     <main className={styles.main}>
@@ -15,6 +18,7 @@ const BookList = ({ books }) => {
           <tr>
             <th>Title</th>
             <th>Category</th>
+            <th>Remove</th>
           </tr>
         </thead>
         <tbody>{bookRows}</tbody>
@@ -31,8 +35,10 @@ BookList.propTypes = {
       category: PropTypes.string,
     }).isRequired,
   ).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = ({ books }) => ({ books });
-
-export default connect(mapStateToProps)(BookList);
+export default connect(
+  ({ books }) => ({ books }),
+  { removeBook },
+)(BookList);

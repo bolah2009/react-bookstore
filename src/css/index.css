@@ -42,3 +42,35 @@ html {
   margin: 8px;
   width: 90%;
 }
+
+.error-message {
+  margin: 8px auto;
+  border: 1px solid #d00;
+  padding: 4px;
+  border-radius: 2px;
+  display: none;
+  width: 90%;
+}
+
+.error-message * {
+  color: #900;
+  display: none;
+}
+
+.error-message.error-category,
+.error-message.error-title {
+  display: block;
+}
+
+.error-message.error-category .category-message {
+  display: block;
+}
+
+.error-message.error-title .title-message {
+  display: block;
+}
+
+input.error,
+select.error {
+  border: 1px solid #d00;
+}

@@ -1,9 +1,7 @@
-let nextBookId = 0;
 export const createBook = ({ title, category }) => {
-  nextBookId += 1;
   return {
     type: 'CREATE_BOOK',
-    id: nextBookId,
+    id: Date.now(),
     title,
     category,
   };
