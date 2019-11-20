@@ -12,17 +12,27 @@ const INITIAL_STATE = {
     {
       id: 0,
       title: 'My first Book',
-      category: 'History',
+      category: 'Action',
     },
     {
       id: 1,
       title: 'My Second Book',
-      category: 'History',
+      category: 'Biography',
     },
     {
       id: 2,
       title: 'My Third Book',
       category: 'History',
+    },
+    {
+      id: 3,
+      title: 'My Third Book',
+      category: 'Horror',
+    },
+    {
+      id: 4,
+      title: 'My Third Book',
+      category: 'Kids',
     },
   ],
 };

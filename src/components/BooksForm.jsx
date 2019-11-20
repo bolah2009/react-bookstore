@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 import styles from '../css/modules/BooksForm.module.css';
 import { createBook } from '../actions';
 import formIsValid from '../helpers/validateForm';
-
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+import categories from '../helpers/bookCategories';
 
 const SelectCategories = ({ value, handleChange }) => {
   const options = categories.map(category => (
