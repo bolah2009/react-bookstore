@@ -11,3 +11,8 @@ export const removeBook = ({ id }) => ({
   type: 'REMOVE_BOOK',
   id,
 });
+
+export const setCategoryFilter = filter => ({
+  type: 'CHANGE_FILTER',
+  filter,
+});

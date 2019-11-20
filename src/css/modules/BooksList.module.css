@@ -2,9 +2,15 @@
   width: 90%;
 }
 
+.nav select {
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
 .title {
   text-align: center;
   margin-bottom: 8px;
+  margin-right: 16px;
 }
 
 .table {
