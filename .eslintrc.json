@@ -11,12 +11,13 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb", "plugin:react/recommended"],
-  "plugins": ["react"],
+  "extends": ["airbnb", "plugin:react/recommended", "prettier"],
+  "plugins": ["react", "prettier"],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "import/no-unresolved": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "prettier/prettier": "error"
   }
 }
