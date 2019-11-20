@@ -6,7 +6,7 @@ import { createBook } from '../actions';
 import formIsValid from '../helpers/validateForm';
 import categories from '../helpers/bookCategories';
 
-const SelectCategories = ({ value, handleChange }) => {
+const SelectCategories = ({ handleChange }) => {
   const options = categories.map(category => (
     <option key={category} value={category}>
       {category}
@@ -14,7 +14,7 @@ const SelectCategories = ({ value, handleChange }) => {
   ));
 
   return (
-    <select value={value} onChange={handleChange} name="category" id="book-category" required>
+    <select onChange={handleChange} name="category" id="book-category" required>
       <option key="placeholder" value="">
         Category
       </option>
@@ -67,7 +67,7 @@ class BooksForm extends React.Component {
 
   render() {
     const {
-      book: { title, category },
+      book: { title },
     } = this.state;
     return (
       <form action="#" className={`${styles.form} d-flex col`}>
@@ -93,7 +93,7 @@ class BooksForm extends React.Component {
             />
           </div>
           <div className={styles.select}>
-            <SelectCategories handleChange={this.handleChange} value={category} />
+            <SelectCategories handleChange={this.handleChange} defaultValue="" />
           </div>
           <div className={styles.button}>
             <button onClick={this.handleSubmit} type="button" id="add-book">
@@ -107,7 +107,6 @@ class BooksForm extends React.Component {
 }
 
 SelectCategories.propTypes = {
-  value: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
 };
 

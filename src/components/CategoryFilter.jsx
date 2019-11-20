@@ -15,8 +15,6 @@ const CategoryFilter = ({ handleFilterChange }) => {
     <select
       defaultValue="All"
       onChange={({ target: { value } }) => handleFilterChange(value)}
-      name="category"
-      id="book-category"
       required
     >
       {options}
