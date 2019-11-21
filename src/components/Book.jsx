@@ -10,29 +10,24 @@ const RemoveBook = ({ bookName, handleClick }) => {
       className={styles.remove}
       type="button"
     >
-      <svg className="svg-delete" viewBox="0 0 24 24">
-        <path
-          fill="#000000"
-          d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
-        />
-      </svg>
+      Remove
     </button>
   );
 };
 
 const Book = ({ book: { id, title, category }, handleRemoveBook }) => (
-  <tr id={id}>
-    <td>{title}</td>
-    <td>{category}</td>
-    <td>
+  <li className={styles.book_list_item} id={id}>
+    <section className={`${styles.book_card} d-flex col`}>
+      <p className={styles.book_category}>{category}</p>
+      <h3 className={styles.book_name}>{title}</h3>
       <RemoveBook bookName={title} handleClick={handleRemoveBook} />
-    </td>
-  </tr>
+    </section>
+  </li>
 );
 
 Book.propTypes = {
   book: PropTypes.exact({
-    id: PropTypes.number,
+    id: PropTypes.string,
     title: PropTypes.string,
     category: PropTypes.string,
   }).isRequired,
