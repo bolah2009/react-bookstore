@@ -1,7 +1,7 @@
 .label_text {
-  margin-right: 8px;
+  margin: 4px 8px 0 0;
   text-transform: uppercase;
-  height: 16px;
+  min-height: 16px;
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
@@ -15,4 +15,5 @@
 
 .select {
   border-radius: 4px;
+  margin: 4px 8px 0 0;
 }

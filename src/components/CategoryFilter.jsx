@@ -13,7 +13,7 @@ const CategoryFilter = ({ category, handleFilterChange }) => {
   ));
 
   return (
-    <label className="d-flex" htmlFor="categories">
+    <label className="d-flex wrap" htmlFor="categories">
       <h4 className={styles.label_text}>Categories</h4>
       <select
         id="categories"

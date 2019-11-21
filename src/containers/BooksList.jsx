@@ -24,7 +24,7 @@ const BookList = ({ books, filter, removeBook, setCategoryFilter }) => {
 
   return (
     <main className={styles.main}>
-      <nav className={`${styles.nav} d-flex ai-c`}>
+      <nav className={`${styles.nav} d-flex ai-c wrap`}>
         <h1 className={styles.title}>Bookstore CMS</h1>
         <CategoryFilter
           category={filter}

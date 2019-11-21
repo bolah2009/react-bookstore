@@ -6,7 +6,7 @@
 
 .book_card {
   max-width: 1200px;
-  height: 120px;
+  min-height: 120px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -14,7 +14,7 @@
 }
 
 .book_category {
-  height: 18px;
+  min-height: 18px;
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -27,7 +27,7 @@
 }
 
 .book_name {
-  height: 29px;
+  min-height: 29px;
   font-family: 'Roboto Slab', serif;
   font-size: 22px;
   font-weight: bold;
@@ -41,7 +41,7 @@
 
 .remove {
   width: 54px;
-  height: 19px;
+  min-height: 19px;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
   font-weight: 300;

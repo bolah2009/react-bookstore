@@ -3,7 +3,8 @@
 }
 
 .nav {
-  height: 95px;
+  min-height: 95px;
+  padding: 8px;
   padding-left: 5%;
   background-color: #fff;
 }
