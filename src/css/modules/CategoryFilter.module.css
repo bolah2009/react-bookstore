@@ -1,0 +1,19 @@
+.label_text {
+  margin: 4px 8px 0 0;
+  text-transform: uppercase;
+  min-height: 16px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.select {
+  border-radius: 4px;
+  margin: 4px 8px 0 0;
+}

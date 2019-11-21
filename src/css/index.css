@@ -14,17 +14,12 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  color: #373737;
-  background: rgb(255, 255, 255);
-  background: rgba(255, 255, 255, 0.3);
   background: transparent;
 }
 
 body {
-  font-size: 14px;
   overflow-x: hidden;
   width: 100%;
-  padding: 8px;
 }
 
 h1 {
@@ -38,15 +33,25 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.root {
+  background-color: #f5f6fa;
+  padding: 24px;
+}
+
 .book-store {
   margin: 8px;
   width: 90%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.05);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
 }
 
 .error-message {
   margin: 8px auto;
   border: 1px solid #d00;
-  padding: 4px;
+  padding: 8px;
+  text-align: center;
   border-radius: 2px;
   display: none;
   width: 90%;
@@ -72,5 +77,5 @@ html {
 
 input.error,
 select.error {
-  border: 1px solid #d00;
+  border-color: #d00;
 }

@@ -17,27 +17,22 @@ const getFilterBooks = ({ books, filter }) => {
   return { books, filter: 'All' };
 };
 
-const BookList = ({ books, removeBook, setCategoryFilter }) => {
+const BookList = ({ books, filter, removeBook, setCategoryFilter }) => {
   const bookRows = books.map(book => (
     <Book handleRemoveBook={() => removeBook(book)} key={book.id} book={book} />
   ));
 
   return (
     <main className={styles.main}>
-      <nav className={`${styles.nav} d-flex`}>
+      <nav className={`${styles.nav} d-flex ai-c wrap`}>
         <h1 className={styles.title}>Bookstore CMS</h1>
-        <CategoryFilter handleFilterChange={filter => setCategoryFilter(filter)} />
+        <CategoryFilter
+          category={filter}
+          handleFilterChange={filter => setCategoryFilter(filter)}
+        />
       </nav>
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-        <tbody>{bookRows}</tbody>
-      </table>
+      <div className={styles.divider} />
+      <ul className={styles.books}>{bookRows}</ul>
     </main>
   );
 };
@@ -45,13 +40,18 @@ const BookList = ({ books, removeBook, setCategoryFilter }) => {
 BookList.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
       title: PropTypes.string,
       category: PropTypes.string,
     }).isRequired,
   ).isRequired,
   removeBook: PropTypes.func.isRequired,
   setCategoryFilter: PropTypes.func.isRequired,
+  filter: PropTypes.string,
+};
+
+BookList.defaultProps = {
+  filter: 'All',
 };
 
 export default connect(

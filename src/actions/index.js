@@ -1,7 +1,9 @@
+import { v4 } from 'node-uuid';
+
 export const createBook = ({ title, category }) => {
   return {
     type: 'CREATE_BOOK',
-    id: Date.now(),
+    id: v4(),
     title,
     category,
   };

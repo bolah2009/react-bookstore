@@ -4,18 +4,18 @@
 [![codecov](https://codecov.io/gh/bolah2009/react-bookstore/branch/development/graph/badge.svg)](https://codecov.io/gh/bolah2009/react-bookstore)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0e141257-1cc9-4c9b-a342-ac5f2fd97595/deploy-status)](https://app.netlify.com/sites/bolah-react-bookstore/deploys)
 
-
-
 # PROJECT: Bookstore App (React and Redux)
 
 This is the first project of the Main React and Redux curriculum at [Microverse](https://www.microverse.org/) - @microverseinc
 
 The objective is to create a Bookstore app using React and Redux. The features of the app also include:
 
-- Testing with Jest
+- Add new book
+- Delete existing book
+- Filter books by category
+- Store persistent using `localStorage` API
 - Linting with ESLint and Stylelint
-- Continuos Integration with Travis and Codecov
-
+- Continuos Integration with Travis
 
 ### Development
 
@@ -62,14 +62,13 @@ yarn start
 yarn build
 ```
 
-
 ### [Live link](https://bolah-react-bookstore.herokuapp.com/)
-
 
 ### Screenshot
 
-[Coming Soon]
-
+|                                                    Large Screen                                                     |                                                     Small Screen                                                     |
+| :-----------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| ![Book Store](https://user-images.githubusercontent.com/36057474/69332678-743c0500-0c57-11ea-9e85-94b936926615.png) | ![Book Store ](https://user-images.githubusercontent.com/36057474/69334270-a307aa80-0c5a-11ea-9a8a-5c9e4c9277de.png) |
 
 ### Author
 

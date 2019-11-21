@@ -78,7 +78,7 @@ class BooksForm extends React.Component {
           </div>
           <div className="category-message">Please choose one book category</div>
         </div>
-        <div className="d-flex jc-sb">
+        <div className="d-flex jc-sb wrap">
           <div className={styles.title}>
             <input
               className="data"
