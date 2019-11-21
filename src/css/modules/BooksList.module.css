@@ -1,52 +1,26 @@
 .main {
-  width: 90%;
+  width: 100%;
 }
 
-.nav select {
-  margin-bottom: 8px;
-  border-radius: 4px;
+.nav {
+  height: 95px;
+  padding-left: 5%;
+  background-color: #fff;
+}
+
+.divider {
+  height: 2px;
+  background-color: #e8e8e8;
 }
 
 .title {
-  text-align: center;
-  margin-bottom: 8px;
-  margin-right: 16px;
-}
-
-.table {
-  background-color: #fff;
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 2px solid #666;
-}
-
-.table thead tr:first-child {
-  width: 15%;
-}
-
-.table th,
-.table td {
-  padding: 0.2em;
-  letter-spacing: 0.1em;
-  border: 2px solid #666;
-}
-
-@media (min-width: 420px) {
-  .table th,
-  .table td {
-    padding: 1em;
-  }
-}
-
-.table tbody td {
-  text-align: center;
-}
-
-.table tbody tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-
-.table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  margin-right: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
