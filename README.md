@@ -17,7 +17,15 @@ The objective is to create a Bookstore app using React and Redux. The features o
 - Linting with ESLint and Stylelint
 - Continuos Integration with Travis
 
-### Development
+## 🌐 [Live link](https://bolah-react-bookstore.herokuapp.com/)
+
+## 🖼️ Screenshot
+
+|                                                    Large Screen                                                     |                                                     Small Screen                                                     |
+| :-----------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| ![Book Store](https://user-images.githubusercontent.com/36057474/69332678-743c0500-0c57-11ea-9e85-94b936926615.png) | ![Book Store ](https://user-images.githubusercontent.com/36057474/69334270-a307aa80-0c5a-11ea-9a8a-5c9e4c9277de.png) |
+
+## 🛠️ Development
 
 - Clone the project
 
@@ -62,14 +70,29 @@ yarn start
 yarn build
 ```
 
-### [Live link](https://bolah-react-bookstore.herokuapp.com/)
+## 🧾 TODO
 
-### Screenshot
+- Add feature to fetch books from an API endpoint
+- Improve UI/UX
 
-|                                                    Large Screen                                                     |                                                     Small Screen                                                     |
-| :-----------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
-| ![Book Store](https://user-images.githubusercontent.com/36057474/69332678-743c0500-0c57-11ea-9e85-94b936926615.png) | ![Book Store ](https://user-images.githubusercontent.com/36057474/69334270-a307aa80-0c5a-11ea-9a8a-5c9e4c9277de.png) |
+## 🤝🏾 Contributing
 
-### Author
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues).
+
+## ⭐️ Show your support
+
+Give a ⭐️ if you like this project!
+
+## 🙏🏾 Acknowledgments
+
+- Microverse Team
+
+## 👨🏽‍💻 Author
 
 - [@bolah2009](https://github.com/bolah2009/)
+
+## 📝 License
+
+[MIT licensed](./LICENSE).
